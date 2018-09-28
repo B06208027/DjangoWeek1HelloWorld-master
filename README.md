@@ -14,9 +14,9 @@ iii.learned Heroku and Git<br><br>
 <n4>作業鏈接</h4>
 <ul>
   <li>
-  https://yzxuan1217.herokuapp.com/
+  hw1:https://yzxuan1217.herokuapp.com/
   </li>
   <li>
-    https://pure-reef-36124.herokuapp.com/
+   hw2:https://pure-reef-36124.herokuapp.com/
   </li>
 </ul>
