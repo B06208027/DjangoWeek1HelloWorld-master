@@ -7,3 +7,6 @@ from django.contrib.auth.models import User
 
 def index(request):
 	return render(request, 'guestbookver1.html')
+
+def yang(request):
+        return render(request,'yang.html')
