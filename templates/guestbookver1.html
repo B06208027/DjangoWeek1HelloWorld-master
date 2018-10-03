@@ -4,26 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Week2楊紫軒</title>
+    <title>Week3楊紫軒</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1 style="align:center">Is my Homewrok 2!</h1>
+    <h1 style="align:center">Is my Homework 3!</h1>
 
     </h2>
     <p id="ta">by B06208027<br></p>
     <div id="container">
         <div id="content">
+		{%for my in mine%}
             <div class="msg">
-                <span class="name">Yang</span>
-                Hello,EVERBODY!
+		    <span class="name">{{my.name}}</span>
+		{{my.msg}}
 
             </div>
-            <div class="msg">
-		<span class="name">Xiao Swaii Gor</span>
-                Hello,FRIENDS.
-            </div>
-        </div>
+	{%endfor%}
+	</div>
         <div id="send-box">
             <form id="send-form">
                 <input type="text" name="name" id="name" placeholder="暱稱">

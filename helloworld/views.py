@@ -6,7 +6,12 @@ from django.contrib.auth.models import User
 
 
 def index(request):
-	return render(request, 'guestbookver1.html')
+        loop1={'name':'Yang','msg':'hi,my name is Yang'}
+        loop2={'name':'Swai','msg':'hello!Nice to meet you,I am Swai'}
+        mine=[loop1,loop2]
+        return render(request, 'guestbookver1.html',locals())
 
 def yang(request):
-        return render(request,'yang.html')
+        buttonlist=['red','blue','green','yellow']
+        return render(request,'yang.html',{'buttonlist':buttonlist})
+

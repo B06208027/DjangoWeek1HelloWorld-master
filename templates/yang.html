@@ -2,6 +2,9 @@
 <html>
 	<head></head>
 <body>
-	<p>hello i am cute cute little yang</p>
+	<p>button show different colors</p>
+	{%for button in buttonlist%}
+	<button style="background-color:{{button}}">{{button}}</button>
+	{%endfor%}
 </body>
 </html>
