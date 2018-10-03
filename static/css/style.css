@@ -104,4 +104,12 @@ html, body {
         color: darkred;
         content: " ]   : ";
         size: 100%;
-    }        
+    }
+
+    #btnn {
+ 	margin:0 auto;
+	width:100px;
+    }
+    .but button:hover{
+	color:white;
+}
