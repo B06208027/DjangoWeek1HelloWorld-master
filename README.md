@@ -17,6 +17,6 @@ iii.learned Heroku and Git<br><br>
   hw1:https://yzxuan1217.herokuapp.com/
   </li>
   <li>
-   hw2:https://pure-reef-36124.herokuapp.com/
+   hw2&hw3:https://pure-reef-36124.herokuapp.com/
   </li>
 </ul>
