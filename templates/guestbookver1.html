@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh">
-{% load  staticfiles %}
+{% load staticfiles %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Week3楊紫軒</title>
+    <title>Week5楊紫軒</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <h1 style="align:center">Is my Homework 3!</h1>
+    <h1 style="align:center">Is my Homework 5!</h1>
     <p id="ta">by B06208027<br></p>
-	    <div id="btnn">
-		    <a href="yang" style="text-decoration:none" class="but"><button style="background-color:pink;border:1px solid red;border-radius:2px">click me to page 2</button></a>
-            </div>
-	    <div id="container">
-		<div id="content">
-		{%for msg in msgs%}
+    <div id="btnn">
+        <a href="yang" style="text-decoration:none" class="but"><button style="background-color:pink;border:1px solid red;border-radius:2px">click me to page 2</button></a>
+    </div>
+    <div id="container">
+        <div id="content">
+            {%for msg in msgs%}
             <div class="msg">
-		    <span class="name">{{msg.talker}}</span>
-		{{msg.message}}
+                <span class="name">{{msg.talker}}</span> {{msg.message}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Submit Date:</b> {{msg.date_time}}
 
             </div>
-	{%endfor%}
-	</div>
+            {%endfor%}
+        </div>
         <div id="send-box">
-            <form id="send-form">
-                <input type="text" name="name" id="name" placeholder="暱稱">
-                <input type="text" name="msg" id="msg" placeholder="說點什麼？">
+            <form action="." method="post">
+                <input type="text" name="talker" id="talker" placeholder="暱稱">
+                <input type="text" name="message" id="message" placeholder="說點什麼？">
+                <input type="hidden" name="ok" value="yes">
                 <input type="submit" id="submit" value="送出">
             </form>
-            <span id='ps'>FAKEXDDD</span>
+            <span id='ps'>SAY SOMETHING~~~</span>
         </div>
     </div>
 </body>
