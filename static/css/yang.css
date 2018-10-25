@@ -1,0 +1,11 @@
+#btnn .but button:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+#btnn .but button {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 2px;
+}

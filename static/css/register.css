@@ -1,0 +1,14 @@
+html,
+body {
+    background-color: beige;
+}
+
+#signup {
+    border: 1px solid yellow;
+    background-color: white;
+}
+
+#signup:hover {
+    background-color: yellow;
+    cursor: pointer;
+}

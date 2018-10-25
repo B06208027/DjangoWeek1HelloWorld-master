@@ -1,0 +1,14 @@
+html,
+body {
+    background-color: beige;
+}
+
+#login {
+    border: 1px solid yellow;
+    background-color: white;
+}
+
+#login:hover {
+    background-color: yellow;
+    cursor: pointer;
+}

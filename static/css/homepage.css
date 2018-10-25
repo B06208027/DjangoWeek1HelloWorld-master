@@ -1,0 +1,29 @@
+.title {
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 2px 2px darkgray;
+}
+
+body {
+    background-color: beige;
+}
+
+.login {
+    margin: 0 auto;
+    width: 150px;
+}
+
+.login #login,
+.login #register {
+    border-radius: 2em;
+    background-color: darkgreen;
+    color: white;
+    box-shadow: 2px 2px darkgray;
+}
+
+.login #login:hover,
+.login #register:hover {
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+}

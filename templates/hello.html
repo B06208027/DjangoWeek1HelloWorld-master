@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    {% if request.user.is_authenticated %}
+    <p>{{request.user}} 您已經登入囉!</p>
+    <a href="/index">進入首頁</a> {% else %}
+    <p>您尚未登入!<a href="/login">登入</a></p>
+    {% endif %}
+</body>
+
+</html>

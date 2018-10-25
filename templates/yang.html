@@ -1,10 +1,18 @@
 <!DOCTYPE HTML>
 <html>
-	<head></head>
+
+<head>
+    <link href="../static/css/yang.css" rel="stylesheet" type="text/css"> </head>
+
 <body>
-	<p>button show different colors</p>
-	{%for button in buttonlist%}
-	<button style="background-color:{{button}}">{{button}}</button>
-	{%endfor%}
+    <p>button show different colors</p>
+    {%for button in buttonlist%}
+    <button style="background-color:{{button}}">{{button}}</button> {%endfor%}
+    <br><br><br><br>
+    <div id="btnn">
+        <a href="/index" style="text-decoration:none" class="but"><button>click me to page 1</button></a>&nbsp;&nbsp;
+        <a href="/logout" style="text-decoration:none" class="but"><button>Logout</button></a>
+    </div>
 </body>
+
 </html>
