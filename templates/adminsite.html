@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    {% for msg in msgs%}
+    <span>{{msg.message}}</span>
+
+    <form action="/adminsite" method="POST">
+        <input type="text" name="newmessage">
+        <input type="hidden" name="idex" value="{{msg.id}}">
+        <input type="hidden" name="message" value="{{msg.message}}">
+        <input type="hidden" name="edit" value="edit">
+        <input type="submit" name="submit" value="修改">
+    </form>
+
+    <form action="/adminsite" method="POST">
+        <input type="hidden" name="idex" value="{{msg.id}}">
+        <input type="hidden" name="message" value="{{msg.message}}">
+        <input type="hidden" name="delete" value="delete">
+        <input type="submit" name="submit" value="刪除">
+    </form>
+    <br> {%endfor%}
+
+</body>
+
+</html>

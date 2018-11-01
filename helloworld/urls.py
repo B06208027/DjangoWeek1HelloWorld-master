@@ -26,4 +26,5 @@ urlpatterns = [
     path('logout',views.logout),
     path('hello',views.hello),
     path('register/',views.register),
+    path('adminsite',views.adminsite),
 ]

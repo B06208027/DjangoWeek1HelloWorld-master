@@ -5,16 +5,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Week5楊紫軒</title>
+    <title>楊紫軒's</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <h1 style="align:center">Is my Homework 5!</h1>
+    <h1 style="align:center">Is my Homework!</h1>
     <p id="ta">by B06208027<br></p>
     <div id="btnn">
         <a href="yang" style="text-decoration:none" class="but"><button>click me to page 2</button></a>&nbsp;&nbsp;
-        <a href="/logout" style="text-decoration:none" class="but"><button>Logout</button></a>
+        <a href="/logout" style="text-decoration:none" class="but"><button>Logout</button></a>&nbsp;&nbsp;
+        <a href="/adminsite" style="text-decoration:none" class="but"><button>edit messages</button></a>
     </div>
     <div id="container">
         <div id="content">
@@ -26,11 +27,12 @@
             {%endfor%}
         </div>
         <div id="send-box">
-            <form action="." method="post">
+            <form action="/index" method="POST">
                 <input type="text" name="talker" id="talker" placeholder="暱稱">
                 <input type="text" name="message" id="message" placeholder="說點什麼？">
-                <input type="hidden" name="ok" value="yes">
+                <input type="hidden" name="ok" value="ok">
                 <input type="submit" id="submit" value="送出">
+
             </form>
             <span id='ps'>SAY SOMETHING~~~</span>
         </div>
